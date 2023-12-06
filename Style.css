@@ -4,16 +4,29 @@ body {
     background-color: rgb(254, 254, 254);
 }
 
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+.pagecontent{
+    width: 10;
+}
+
+/*Navigation bar*/
 .navbar {
     overflow: hidden;
     background-color: #495057;
     border: 0px;
-    position: fixed;
-    top: 0;
+    position:fixed;
+    z-index: 1; /*Ensure Navbar is displayed above other elements*/
+    top: 0; /*Keep Navbar on top of screen*/
     width: 100%;
 }
   
-.navbar a {
+.navbar a { /*Navigation Links*/
     float: left;
     color: white;
     text-align: center;
@@ -28,14 +41,14 @@ body {
     overflow: hidden;  
 }
   
-.navbar a:hover {
+.navbar a:hover { /*When hovered over*/
     background-color: #00FF00;
     color: black;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
   
-.navbar a.active {
+.navbar a.active { /*Home button*/
     background-color: #B0B0B0;
     border-radius: 15px;
     margin-right: 10px;
@@ -46,25 +59,57 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
-.navbar a.active:hover {
+.navbar a.active:hover { /*Home button when hovered over*/
     background-color: #818080;
 }
 
-.main-content {
+.main-content { /*Style the main content*/
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.pagetitle {
+.navbar-right {  /*Navbar elements with this class appears on the right*/
+    float: right;
+}
+
+.pagetitle { /*Individual page titles*/
     text-align: center;
+    font-size: 70px;
     padding-top: 200px;
     padding-bottom: 200px;
     color: rgb(232, 215, 215);
     color: #00FF00;
-    text-shadow: 0 0 2px #080707;
+    text-shadow: 1 1 2px #080707;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.navbar-right {
-    float: right;
+.highlight-container, .highlight {
+    position: relative;
+}
+  
+.highlight-container {
+    display: inline-block;
+}
+
+.highlight-container:before {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: #00FF00;
+    transform: rotate(2deg);
+    top: 4px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 10px 3px 3px 10px;
   }
+
+.underline {
+    display: inline;
+    border-bottom: 3px solid #f9dd94;
+}
