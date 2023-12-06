@@ -5,12 +5,20 @@ body {
     background-color: #FFFFFF;
 }
 
+h1 {
+    font-size: 60px;
+}
+
 h2 {
     font-size: 40px;
 }
 
 p {
     font-size: 20px;
+}
+
+li {
+    font-size:20px;
 }
 
 .pagecontent {
@@ -81,7 +89,7 @@ p {
     padding-top: 200px;
     padding-bottom: 200px;
     color: rgb(232, 215, 215);
-    color: #00FF00;
+    color: #FFFFFF;
     -webkit-text-stroke:1px #000000;
     text-shadow: 1px 1px 2px black;
     background-repeat: no-repeat;
@@ -105,7 +113,7 @@ p {
     margin-right: -3px;
     position: absolute;
     background: #00FF00;
-    transform: rotate(2deg);
+    transform: rotate(1deg);
     top: 4px;
     left: -1px;
     border-radius: 20% 25% 20% 24%;
@@ -126,10 +134,10 @@ p {
   
 .footer-links {
     display: flex;
-    text-decoration: none; 
-    justify-content: center;
+    justify-content:space-evenly;
     list-style: none;
   }
+  
 
   .footer-links li {
     display: inline-block;
@@ -138,4 +146,13 @@ p {
 .footer-bottom {
     font-size: 4px;
     color: #B0B0B0;
+}
+
+.expanding-hover {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.expanding-hover:hover{
+    transform: scale(1.2);
 }
