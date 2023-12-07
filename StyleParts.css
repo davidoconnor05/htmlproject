@@ -1,0 +1,23 @@
+.tbl, .th1, .td1 {
+  border: 1px solid black;
+}
+img {
+
+float: right;
+
+}
+table, th, td{
+	border: none;
+}
+iframe {
+   display: block;
+   margin: 0 auto;
+}
+
+dd {
+  font-size: 30;
+}
+
+dt {
+  font-size: 25;
+}
