@@ -1,0 +1,24 @@
+img {
+    height: 500px;
+}
+
+ul {
+    text-align: left;
+}
+
+.accessory-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+  .accessory-content {
+    flex: 1;
+}
+
+  .accessory-content img {
+    max-width: 100%;
+    height: auto;
+}
+

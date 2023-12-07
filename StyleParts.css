@@ -1,23 +1,25 @@
 .tbl, .th1, .td1 {
   border: 1px solid black;
 }
-img {
 
-float: right;
-
-}
-table, th, td{
-	border: none;
-}
-iframe {
-   display: block;
-   margin: 0 auto;
+.parts-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-dd {
-  font-size: 30;
+.parts-content {
+  flex: 1;
 }
 
-dt {
-  font-size: 25;
+.parts-content img {
+  float: right;
+  max-width: 400px;
+  padding-right: 70px;
+  height: auto;
+}
+
+p {
+  font-size: 22px;
 }
